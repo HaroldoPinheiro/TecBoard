@@ -1,0 +1,145 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+    --fundoDark: #0E1014;
+    --textDark: #f5f5f5;
+    --fundoLight: #ffffff;
+    --textLight: #232323;
+    --roxo: #9747ff;
+    --roxo-hover: #8233E8;
+    --title-font: "Unbounded", sans-serif;
+    --text-font: "Poppins", sans-serif;
+}
+
+.tecboard{
+    background-color: var(--fundoLight);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--text-font);
+    color:var(--textLight);
+}
+
+.tecboard__nav{
+    display: flex;
+    padding: 37.5px 180px;
+    justify-content: space-between;
+}
+
+.tecboard__nav__logo{
+    width: 156.9675px;
+    height: 25.5px;
+}
+
+.tecboard__nav__botao{
+    width: 25px;
+}
+
+.tecboard__main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0px 504px;
+    gap: 40px
+}
+
+.tecboard__written{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.tecboard__title{
+    font-family: var(--title-font);
+    font-weight: 700;
+    font-size: 3em;
+}
+
+.tecboard__title strong{
+    color: var(--roxo);
+}
+
+.tecboard__text{
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.tecboard__link{
+    padding: 16px 24px;
+    background-color: var(--roxo);
+    border-radius: 32px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1em;
+    color: var(--textDark);
+    width: 200px;
+}
+
+.tecboard__link:hover{
+    background-color: var(--roxo-hover);
+}
+
+.tecboard__img{
+    width: 792px;
+}
+
+@media (max-width: 1024px) {
+
+    .tecboard{
+        box-sizing: border-box;
+        width: 100vw;
+    }
+    .tecboard__nav{
+        padding: 32.5px 60px;
+    }
+
+    .tecboard__main{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 24.5px 60px;
+    }
+
+    .tecboard__img{
+        width: 100%
+    }
+}
+
+@media (max-width: 600px) {
+
+    .tecboard{
+        box-sizing: border-box;
+        width: 100vw;
+    }
+    .tecboard__nav{
+        padding: 32px 16px;
+    }
+
+    .tecboard__main{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 44px 16px;
+    }
+
+    .tecboard__title{
+        font-size: 2em;
+    }
+
+    .tecboard__text{
+        font-size: 0.75em;
+    }
+
+    .tecboard__link{
+        padding: 8px 12px;
+        width: 150px;
+        font-size: 0.75em;
+    }
+
+    .tecboard__img{
+        width: 341px;
+    }
+}
